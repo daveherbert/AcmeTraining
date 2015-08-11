@@ -28,5 +28,10 @@
                 <class>Acme_Training_Block</class>
             </training>
         </blocks>
+        <models>
+            <training>
+                <class>Acme_Training_Model</class>
+            </training>
+        </models>
     </global>
 </config>
