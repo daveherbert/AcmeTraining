@@ -2,7 +2,9 @@
 <container xmlns="http://symfony.com/schema/dic/services">
     <services>
         <service>
-
+            <service id="acme.price_checker" class="Acme_Training_Cart_PriceChecker">
+                
+            </service>
         </service>
     </services>
 </container>
