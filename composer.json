@@ -11,7 +11,7 @@
             ["app/etc/modules/Acme_Training.xml", "app/etc/modules/"],
             ["app/code/community/Acme/*", "app/code/community/Acme/"],
             ["app/design/frontend/base/default/layout/training.xml", "app/design/frontend/base/default/layout/"],
-            ["app/design/frontend/base/default/template/training/*", "app/design/frontend/base/default/template/training/"],
+            ["app/design/frontend/base/default/template/training/*", "app/design/frontend/base/default/template/training/"]
         ]
     }
 }
