@@ -10,4 +10,13 @@ class Acme_Training_Model_Observer
 
         $this->getService('acme.price_checker')->filterCheapest($catalog);
     }
+
+    public function onProductCollectionLoadBefore(Varien_Event_Observer $event)
+    {
+        $cart = $event->getCart();
+        $products = $cart->getItems();
+
+        $this->getService('cart_processor')->processCart($cart);
+
+    }
 }
