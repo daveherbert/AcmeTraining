@@ -33,5 +33,13 @@
                 <class>Acme_Training_Model</class>
             </training>
         </models>
+        <catalog_product_collection_load_after>
+            <observers>
+                <acme_training_observer>
+                    <class>Acme_Training_Model_Observer</class>
+                    <method>onCatalogLoadBefore</method>
+                </acme_training_observer>
+            </observers>
+        </catalog_product_collection_load_after>
     </global>
 </config>
