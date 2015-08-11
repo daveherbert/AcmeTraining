@@ -14,5 +14,19 @@
                 </args>
             </training>
         </routers>
+        <layout>
+            <updates>
+                <training>
+                    <file>training.xml</file>
+                </training>
+            </updates>
+        </layout>
     </frontend>
+    <global>
+        <blocks>
+            <training>
+                <class>Acme_Training_Block</class>
+            </training>
+        </blocks>
+    </global>
 </config>

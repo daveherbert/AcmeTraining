@@ -1,0 +1,15 @@
+<h3>My Block for Weather using Guzzle Client</h3>
+
+<?php $weather = $this->getWeatherFor('London') ?>
+
+<ul>
+    <li>
+        <span>Temperature:</span>
+        <span> <?php echo $weather->main->temp ?></span>
+    </li>
+
+    <li>
+        <span>Humidity:</span>
+        <span> <?php echo $weather->main->humidity ?></span>
+    </li>
+</ul>
