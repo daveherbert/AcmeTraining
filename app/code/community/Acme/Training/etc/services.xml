@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <container xmlns="http://symfony.com/schema/dic/services">
     <services>
-        <service>
-            <service id="acme.price_checker" class="Acme_Training_Cart_PriceChecker">
-                <argument type="service" id="core_logger" />
-            </service>
-            <service id="core_logger" class="Mage_Core_Model_Logger">
-                <factory class="Mage" method="getSingleton" />
-                <argument>core/logger</argument>
-            </service>
+        <service id="acme.price_checker" class="Acme_Training_Cart_PriceChecker">
+            <argument type="service" id="core_logger" />
+        </service>
+        <service id="core_logger" class="Mage_Core_Model_Logger">
+            <factory class="Mage" method="getSingleton" />
+            <argument>core/logger</argument>
         </service>
         <service id="cart_processor" class="Acme\CartProcessor">
             <argument type="service" id="product_catalog"/>
