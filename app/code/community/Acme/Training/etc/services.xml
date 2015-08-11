@@ -10,5 +10,13 @@
                 <argument>core/logger</argument>
             </service>
         </service>
+        <service id="cart_processor" class="Acme\CartProcessor">
+            <argument type="service" id="product_catalog"/>
+        </service>
+
+        <service id="product_catalog" class="Acme_Training_Model_Resource_Product_Collection">
+            <factory class="Mage" method="getResourceModel"/>
+            <argument>catalog/product_collection</argument>
+        </service>
     </services>
 </container>

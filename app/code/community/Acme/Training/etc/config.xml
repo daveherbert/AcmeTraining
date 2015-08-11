@@ -32,14 +32,47 @@
             <training>
                 <class>Acme_Training_Model</class>
             </training>
+            <acme_training>
+                <class>Acme_Training_Model</class>
+            </acme_training>
+            <sales>
+                <rewrite>
+                    <quote_item>Acme_Training_Model_Quote_Item</quote_item>
+                </rewrite>
+            </sales>
+            <checkout>
+                <rewrite>
+                    <cart>Acme_Training_Model_Cart</cart>
+                </rewrite>
+            </checkout>
+            <catalog>
+                <rewrite>
+                    <product>Acme_Training_Model_Product</product>
+                </rewrite>
+            </catalog>
+            <catalog_resource>
+                <rewrite>
+                    <product_collection>Acme_Training_Model_Resource_Product_Collection</product_collection>
+                </rewrite>
+            </catalog_resource>
         </models>
-        <catalog_product_collection_load_after>
-            <observers>
-                <acme_training_observer>
-                    <class>Acme_Training_Model_Observer</class>
-                    <method>onCatalogLoadBefore</method>
-                </acme_training_observer>
-            </observers>
-        </catalog_product_collection_load_after>
+        <events>
+            <catalog_product_collection_load_after>
+                <observers>
+                    <acme_training_observer>
+                        <class>Acme_Training_Model_Observer</class>
+                        <method>onCatalogLoadBefore</method>
+                    </acme_training_observer>
+                </observers>
+            </catalog_product_collection_load_after>
+            <checkout_cart_update_items_before>
+                <observers>
+                    <acme_training_observer>
+                        <class>Acme_Training_Model_Observer</class>
+                        <method>onProductCollectionLoadBefore</method>
+                    </acme_training_observer>
+                </observers>
+            </checkout_cart_update_items_before>
+        </events>
     </global>
 </config>
