@@ -2,7 +2,7 @@
 <layout>
     <training_index_index>
         <reference name="content">
-            <block type="training/myblock" name="myblock" template="training/index.phtml"/>
+            <block type="training/myBlock" name="myblock" template="training/index.phtml"/>
         </reference>
     </training_index_index>
 </layout>
