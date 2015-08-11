@@ -1,5 +1,7 @@
 <?php
 
+use GuzzleHttp\Client;
+
 class Acme_Training_Block_MyBlock extends Mage_Core_Block_Template
 {
     public function getWeatherFor($city)
