@@ -1,0 +1,18 @@
+<config>
+    <modules>
+        <Acme_Training>
+            <version>0.1.0</version>
+        </Acme_Training>
+    </modules>
+    <frontend>
+        <routers>
+            <training>
+                <use>standard</use>
+                <args>
+                    <module>Acme_Training</module>
+                    <frontName>training</frontName>
+                </args>
+            </training>
+        </routers>
+    </frontend>
+</config>

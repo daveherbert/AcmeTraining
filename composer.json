@@ -1,0 +1,15 @@
+{
+    "name": "inviqa/acme-training",
+    "type": "magento-module",
+    "require": {
+        "magento-hackathon/magento-composer-installer": "^3.0"
+    },
+    "extra": {
+        "magento-root-dir": "./public",
+        "deploy-strategy": "symlink",
+        "map": [
+            ["app/etc/modules/Acme_Training.xml", "app/etc/modules/"],
+            ["app/code/community/Acme/*", "app/code/community/Acme/"]
+        ]
+    }
+}
